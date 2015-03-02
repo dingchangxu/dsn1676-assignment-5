@@ -28,11 +28,21 @@
 
 li {
     list-style-type: none;
-    display: block;
+    text-align: left;
 } 
 
 .add {
     font-size: .5rem;
     background-color: white;
     border-radius: 5px;
+}
+
+.xbutton {
+    float: right;
+    clear: right;
+
+}
+
+h2 {
+    display: inline-block;
 }

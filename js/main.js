@@ -12,6 +12,7 @@ $form.on('submit', function (e) {
     var $todolistH2 = $('<h2>').html($todolist.val());
     var $button = $('<button>');
     $button.html('✘');
+    $button.addClass ('xbutton');
     
     $li.append($todolistH2).append($button);
     $list.append($li);
