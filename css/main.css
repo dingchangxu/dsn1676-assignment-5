@@ -2,7 +2,7 @@
     background-color: #E6E7E8;
     border: 33px;
     border-radius: 10px;
-    padding: 1rem;
+    padding: .5rem;
 }
 
 .todo {
@@ -22,13 +22,12 @@
 }
 
 .js-highlight {
-    color: red;
+    color: grey;
     text-decoration: line-through;    
 }
 
 li {
     list-style-type: none;
-    text-align: center;
     display: block;
 } 
 
