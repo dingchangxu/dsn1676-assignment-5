@@ -1,5 +1,39 @@
-.li {
+.box {
+    background-color: #E6E7E8;
+    border: 33px;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.todo {
+    font-size: 3rem;
+    display: block;
+    text-align: center;
+}
+
+.form {
+    text-align: center;
+    border-radius: 5px; 
+}
+
+.list {
+    color: black;
     text-decoration: none;
-    color: blue;
-    
+}
+
+.js-highlight {
+    color: red;
+    text-decoration: line-through;    
+}
+
+li {
+    list-style-type: none;
+    text-align: center;
+    display: block;
+} 
+
+.add {
+    font-size: .5rem;
+    background-color: white;
+    border-radius: 5px;
 }

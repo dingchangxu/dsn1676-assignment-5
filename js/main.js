@@ -1,34 +1,27 @@
-var $add = $('#add');
-var $add = $('.add');
-//var $add = $('.name');
-var $form = $('form');
+var $form = $('.form');
 var $list = $('.list');
 var $remove = $('.remove');
 var $prime = $('prime');
-
+var $add = $('.add');
+var $todolist = $('.todolist');
 
 $form.on('submit', function (e) {
     e.preventDefault();
     
     var $li = $('<li>');
-    $li.addClass('addnew').html($name.val());
+    var $todolistH2 = $('<h2>').html($todolist.val());
+    var $button = $('<button>');
+    $button.html('✘');
     
-    $li.append($li);
-    $dinos.append($li);
-    var list = $add.attr('href');
-    $add.css('ulr(' + list + ')');
+    $li.append($todolistH2).append($button);
+    $list.append($li);
     
-    
+    $button.on('click', function () {
+    $li.remove();
+});
 });
 
-
-
-    
-$add.on('click', function () {
-    list.append('<li>fffff</li>');
-    
+$list.on('click', 'li', function () {
+    $(this).toggleClass('js-highlight');
 });
-
-$remove.on('click', function () {
-    $prime.remove();
-});
+  
